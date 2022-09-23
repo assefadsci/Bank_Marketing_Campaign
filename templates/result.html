@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Bank Marketing Campaign</title>
+    <meta name="viewpoint" content="width= device-wdith">
+</head>
+
+<body>
+
+    <div class="containers">
+        <h1 class="form-title-main">Bank Marketing Campaign</h1>
+        <h3 class="form-title">Who Will Subscribe a Term Deposit?</h3>
+        <div class="results">
+            {% if prediction == 1 %}
+            <h1 class='yes'>Yes, client will SUBSCRIBE a term deposit </h1>
+            <div>
+                <ul class="strategy">
+                    <li> Set expectations when onboarding customers</li>
+                    <li> Provide rewards for renewals</li>
+                </ul>
+            </div>
+            {% elif prediction== 0 %}
+            <h1 class='no'>Sorry, Client will NOT SUBSCRIBE a term deposit</h1>
+            <div>
+                <ul class="strategy">
+                    <li> Improve the quality of conversation on the phone </li>
+                    <li> Run the campaign when interest rates are high</li>
+                    <li> Run the campaign when macroeconomic environment is stable</li>
+                    <li> Gather customer feedback or content</li>
+                    <li> Increase contact frequency and duration</li>
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+        </form>
+        <br><br>
+        <!--<h3>{{ prediction_text }}<h3></h3>-->
+    </div>
+
+</body>
+
+</html>
