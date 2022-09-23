@@ -52,12 +52,6 @@ body {
     padding: 20px 0;
 }
 
-.input-info:nth-child(),
-.input-data:nth-child(){
-    justify-content: end;
-
-}
-
 .input-info{
     display: flex;
     flex-wrap: wrap;
@@ -112,28 +106,7 @@ body {
 }
 
 
-@media(max-width:600px){
-    .container{
-        min-width: 280px;
-    }
-    .input-info{
-        margin-bottom: 12px;
-        width: 100%;
-    }
-    .input-data{
-        margin-bottom: 12px;
-        width: 100%;
-    }
-    .input-info:nth-child(){
-        justify-content: end;
-    
-    }
-    .input-data:nth-child(){
-        justify-content: end;
-    
-    }
 
-}
 
 .containers{
     width: 100%;
@@ -146,7 +119,6 @@ body {
     box-shadow: inset -2px 2px 2px red;
 
 }
-
 .results{
     text-align: center;
     vertical-align: middle;

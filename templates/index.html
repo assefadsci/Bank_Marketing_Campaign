@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
   <title>Bank Marketing Campaign</title>
-  <meta name="viewpoint" content="width= device-wdith">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -61,8 +61,7 @@
         </div>
         <div class="input-info">
           <label for="balance">Average yearly balance</label>
-          <input type="number" id="balance" name="balance" placeholder="balance"
-            required="required">
+          <input type="number" id="balance" name="balance" placeholder="balance" required="required">
         </div>
         <div class="input-data">
           <label for="housing">Has housing loan</label>
@@ -107,11 +106,10 @@
             <option value="dec">dec</option>
           </select>
         </div>
-        
+
         <div class="input-info">
           <label for="duration">Last contact duration in sec</label>
-          <input type="number" id="duration" name="duration" required="required"
-            placeholder="duration" min="0">
+          <input type="number" id="duration" name="duration" required="required" placeholder="duration" min="0">
         </div>
         <div class="input-info">
           <label for="campaign">Number of contacts</label>
@@ -119,12 +117,12 @@
         </div>
         <div class="input-info">
           <label for="pdays">Days after last contact</label>
-          <input type="number" id="pdays" name="pdays" required="required"
-            placeholder="-1 if not contacted" min="-1">
+          <input type="number" id="pdays" name="pdays" required="required" placeholder="-1 if not contacted" min="-1">
         </div>
         <div class="input-info">
           <label for="previous">Previous contacts</label>
-          <input type="number" id="previous" name="previous" required="required" placeholder="previous contacts" min="0">
+          <input type="number" id="previous" name="previous" required="required" placeholder="previous contacts"
+            min="0">
         </div>
         <div class="input-data">
           <label for="poutcome">Previous campaign outcome</label>
@@ -138,8 +136,6 @@
       </div>
       <button type="submit" class="button">Predict</button>
     </form>
-    <br><br>
-    <!--<h3>{{ prediction_text }}<h3></h3>-->
   </div>
 
 </body>
